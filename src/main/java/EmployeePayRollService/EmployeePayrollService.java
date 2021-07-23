@@ -20,7 +20,7 @@ public class EmployeePayrollService
 		employePayrollList.add(new EmployeeData(id, Name, salary));
 	}
 
-	public void writeEmployeeDataInConsole() //write the employee data in console.
+	public void writeEmployeeDataInConsole() 
 	{
 		System.out.println("Writing Employee Pay Roll Data \n"+employePayrollList);
 	}
