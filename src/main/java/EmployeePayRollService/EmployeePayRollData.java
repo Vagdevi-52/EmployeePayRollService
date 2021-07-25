@@ -1,22 +1,23 @@
 package EmployeePayRollService;
 
 
-public class EmployeePayRollData 
+public class EmployeePayRollData
 {
-	public int id;
-	public String name;
-	public double salary;
+	private int employeeId;
+	private String employeeName;
+	private int employeeSalary;
 	
-	public EmployeePayRollData(Integer id, String name, double salary2)
+	public EmployeePayRollData(int employeeId, String employeeName, int employeeSalary) 
 	{
-		this.id = id;
-		this.name = name;
-		this.salary = salary2;
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.employeeSalary = employeeSalary;
 	}
-	
 
-	public String toString()
-	{
-		return "id = "+id+", Name = "+name+", salary = "+salary;
+	@Override
+	public String toString() {
+		return "employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeeSalary="
+				+ employeeSalary + "";
 	}
 }
